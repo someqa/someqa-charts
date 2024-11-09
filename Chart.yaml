@@ -1,0 +1,5 @@
+apiVersion: v2
+name: jenkins-chart
+description: Helm chart for deploying Jenkins with a simple "hello world" log application.
+version: 0.1.0
+appVersion: "2.414.2"
