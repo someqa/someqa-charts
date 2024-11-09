@@ -1,0 +1,21 @@
+image:
+  repository: jenkins/jenkins
+  tag: "2.414.2"
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 8080
+  nodePort: 30080
+
+persistence:
+  enabled: true
+  existingClaim: ""
+  storageClass: "standard"
+  accessMode: ReadWriteOnce
+  size: 8Gi
+  mountPath: /var/jenkins_home
+
+helloWorldApp:
+  enabled: true
+  message: "hello world"
